@@ -24,9 +24,18 @@
         // ************************************* Stack *****************************************
         // =====================================  Easy =========================================
         //1. Reverse a String Using Stack 
-        public static string ReverseAString(string word)
+        public static void ReverseAString(string word)
         {
-            
+            Stack<char> letter = new Stack<char>(); // Stack of letter 
+            //char[] letter1 = new char[word.Length];
+            foreach (char let in word)
+            {
+                letter.Push(let);
+            }
+            foreach (char let2 in letter)
+            {
+                Console.Write(let2);
+            }
             
 
 
